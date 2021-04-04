@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EliteDataConverter", "EliteDataConverter\EliteDataConverter.csproj", "{48F29568-39AD-495E-9799-544F60EF251A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EliteGraph", "EliteGraph\EliteGraph.csproj", "{5B1CE706-2BD5-4639-A0DA-F357765AB9D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{E48AE646-8531-4C56-B4ED-3CB905E0645D}"
+	ProjectSection(SolutionItems) = preProject
+		Data\EDData.xml = Data\EDData.xml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48F29568-39AD-495E-9799-544F60EF251A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48F29568-39AD-495E-9799-544F60EF251A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48F29568-39AD-495E-9799-544F60EF251A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48F29568-39AD-495E-9799-544F60EF251A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B1CE706-2BD5-4639-A0DA-F357765AB9D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B1CE706-2BD5-4639-A0DA-F357765AB9D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B1CE706-2BD5-4639-A0DA-F357765AB9D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B1CE706-2BD5-4639-A0DA-F357765AB9D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E27C5B6-DFFF-4E6D-B42C-95FB16C50020}
+	EndGlobalSection
+EndGlobal
