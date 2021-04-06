@@ -18,6 +18,7 @@ Fill the neo4j database with data
 Now you can start running queries, like:
 
 match (c:Corporation)-[e]-(n) where (c.name="Azimuth Biochemicals") return *
+
 match (c:Person)-[e]-(n) where (c.name="Kahina Tijani Loren") return *
 
 Have fun commanders :)
