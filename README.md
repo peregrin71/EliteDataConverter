@@ -1,7 +1,10 @@
 # EliteDataConverter
 
 This project reads an input xml file (custom format) to generate a cypher script that can be run in neo4j.
-To setup such a database check this website : https://neo4j.com/developer/neo4j-desktop/
+The input data can be found here : https://github.com/peregrin71/EliteDataConverter/blob/master/EliteGraph/Data/EDData.xml
+
+
+To setup a neo4j database check this website : https://neo4j.com/developer/neo4j-desktop/
 
 Then open the cypher file 
 https://github.com/peregrin71/EliteDataConverter/blob/master/EliteGraph/Data/EDData.cypher
