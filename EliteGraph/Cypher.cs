@@ -14,12 +14,9 @@ namespace EliteGraph
 
             using (var stream = new StreamWriter(filename, false))
             {
-                // CALL apoc.cypher.runFile("EDData.cypher",{statistics: false})
-                //stream.WriteLine("// Run this script using CALL apoc.cypher.runFile(\"EDData.cypher\")");
-                //stream.WriteLine("// for now clean the database first");
+                stream.WriteLine("// Before importing data first run this neo4j command");
                 stream.WriteLine("MATCH (n) DETACH DELETE n");
-                //stream.WriteLine();
-                //stream.WriteLine("// Add all nodes from the graph");
+                stream.WriteLine("// Then copy all the following lines into neo4j and run them");
 
                 foreach (var entry in g.Nodes)
                 {
@@ -28,7 +25,7 @@ namespace EliteGraph
                     var node = entry.Value;
                     bool write_comma = false;
 
-                    // only output nodes used in edges
+                     // only output nodes used in edges
                     if (node.IsUsed)
                     {
                         if (readable_keys)
@@ -62,13 +59,11 @@ namespace EliteGraph
                     }
                 }
 
-                //stream.WriteLine("// edges");
-
                 foreach (var edge in g.Edges)
                 {
                     if (readable_keys)
                     {
-                        stream.WriteLine("CREATE ({0})-[:{1}]->({2})", edge.From.Key, edge.Kind, edge.To.Key);
+                        stream.WriteLine("CREATE (n{0})-[:{1}]->(n{2})", edge.From.Key, edge.Kind, edge.To.Key);
                     }
                     else
                     {

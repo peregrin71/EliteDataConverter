@@ -7,11 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EliteDataConverter", "Elite
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EliteGraph", "EliteGraph\EliteGraph.csproj", "{5B1CE706-2BD5-4639-A0DA-F357765AB9D0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{E48AE646-8531-4C56-B4ED-3CB905E0645D}"
-	ProjectSection(SolutionItems) = preProject
-		Data\EDData.xml = Data\EDData.xml
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
