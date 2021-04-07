@@ -1,4 +1,18 @@
 ﻿<Data>
+  <!-- For relations with any of those names, the key is automatically generated -->
+  <AutoCreateOrGetTypes>
+    <Type name="Action"/>
+    <Type name="Activity"/>
+    <Type name="Date"/>
+    <Type name="DateOfBirth"/>
+    <Type name="DateOfDeath"/>
+    <Type name="FoundingDate"/>
+    <Type name="FromDate"/>
+    <Type name="Membership"/>
+    <Type name="Note"/>
+    <Type name="Period"/>
+    <Type name="ToDate"/>
+  </AutoCreateOrGetTypes>
   <Values>
     <!-- valid words for edges -->
     <Verbs>
@@ -1307,331 +1321,338 @@
     </Systems>
   </Topography>
   <Actions>
-    <!-- actions without dates so far -->
+    <Period key="period_2100_3299" name="2100-3299">
+      <Action>
+        <Actor from="penelope_carver"/>
+        <Period to="3111"/>
+        <Verb to="discovers"/>
+        <Target to="advanced_alien_technology"/>
+        <TargetSystem to="musca_dark_region_pj_p_b6_1_3"/>
+      </Action>
+      <Action>
+        <Actor from="azimuth_biochemicals"/>
+        <Period to="3111"/>
+        <Verb to="dispatches"/>
+        <Target to="adamastor"/>
+        <TargetSystem to="musca_dark_region_pj_p_b6"/>
+      </Action>
+      <Action>
+        <Actor from="azimuth_biochemicals"/>
+        <Period to="3113"/>
+        <Verb to="dispatches"/>
+        <Target to="hesperus"/>
+        <To to="unknown"/>
+      </Action>
+      <Action>
+        <Actor from="aaai"/>
+        <Verb to="builds"/>
+        <Target to="argents_quest"/>
+        <Status to="date_to_be_verified"/>
+        <Period to="3252"/>
+      </Action>
+      <Action>
+        <Actor from="aaai"/>
+        <Verb to="builds"/>
+        <Target to="turners_quest"/>
+        <Status to="date_to_be_verified"/>
+        <Period to="3252"/>
+      </Action>
+      <Action>
+        <Actor from="the_club"/>
+        <Period to="3270"/>
+        <Verb to="propose_void"/>
+        <Target to="london_treaty"/>
+        <System to="epsilon_erandi"/>
+      </Action>
+    </Period>
+    <Period key="period_3300" name="3300">
+    </Period>
+    <Period key="period_3301" name="3301">
+      <Action>
+        <Date to="3301-10-28"/>
+        <Actor from="anthony_corvus"/>
+        <Verb to="defeats"/>
+        <Target to="emperors_dawn"/>
+        <Location to="namarii"/>
+        <Location to="ltt_874"/>
+        <Location to="tabaldak"/>
+      </Action>
+      <Action>
+        <Actor from="arissa_lavigny_duval"/>
+        <Date to="3301-10-18"/>
+        <Verb to="becomes"/>
+        <Target to="emperor"/>
+      </Action>
+    </Period>
+    <Period key="period_3302" name="3302">
+      <Action>
+        <Date to="3302-08"/>
+        <Actor from="denton_patreus"/>
+        <Verb to="abducts"/>
+        <Target to="kahina_tijani_loren"/>
+      </Action>
+      <Action>
+        <Date to="3302-08-23"/>
+        <Actor from="emperors_dawn"/>
+        <Verb to="attacks"/>
+        <Target to="denton_patreus"/>
+        <System to="cemiess"/>
+      </Action>
+    </Period>
+    <Period key="period_3303" name="3303">
+      <Action>
+        <Date to="3303-02-24"/>
+        <Actor from="alba_tesreau"/>
+        <Verb to="contacts"/>
+        <Target to="ram_tah"/>
+      </Action>
+      <Action>
+        <Date to="3303-03-24"/>
+        <Actor from="kahina_tijani_loren"/>
+        <Verb to="steals"/>
+        <Target to="meta_alloys"/>
+        <System to="maia"/>
+      </Action>
+      <Action>
+        <Date to="3303-04-24"/>
+        <Actor from="denton_patreus"/>
+        <Verb to="contracts"/>
+        <Target to="cmdr_besieger"/>
+      </Action>
+      <Action>
+        <Date to="3303-04-24"/>
+        <Actor from="denton_patreus"/>
+        <Verb to="contracts"/>
+        <Target to="elvira_martuuk"/>
+      </Action>
+      <Action key="cmdr_besieger_kills_kahina_tijani_loren">
+        <Date to="3303-04-29"/>
+        <Actor from="cmdr_besieger"/>
+        <Verb to="kills"/>
+        <Target to="kahina_tijani_loren"/>
+        <System to="anumclaw"/>
+      </Action>
+      <Action>
+        <Date to="3303-08-05"/>
+        <Actor from="alba_tesreau"/>
+        <Verb to="founds"/>
+        <Target to="aegis"/>
+      </Action>
+      <Action>
+        <Date to="3303-10-05"/>
+        <Actor from="alba_tesreau"/>
+        <Verb to="releases"/>
+        <Target to="remote_release_flak_launcher"/>
+      </Action>
+    </Period>
+    <Period key="period_3304" name="3304">
+      <Action>
+        <Period to="3304-08"/>
+        <Actor from="federal_intelligence_agancy"/>
+        <Verb to="arrests"/>
+        <Target to="alfred_ulyanov"/>
+      </Action>
+    </Period>
+    <Period key="period_3305" name="3305">
+    </Period>
+    <Period key="period_3306" name="3306">
+      <Action>
+        <Actor from="adamastor"/>
+        <Date to="3306-10-29"/>
+        <Verb to="reenters"/>
+        <Target to="chuckchan"/>
+      </Action>
+    </Period>
+    <Period key="period_3307" name="3307">
+      <Action>
+        <Date to="3307-12-01"/>
+        <Actor from="alessia_verdi"/>
+        <Verb to="kills"/>
+        <Target to="antonio_bianchi"/>
+        <System to="khun"/>
+      </Action>
+      <Action key="nine_martyrs_bombing">
+        <Date to="3307-03-11"/>
+        <Actor from="nmla"/>
+        <Verb to="bombs"/>
+        <Target to="li_qing_jao_station"/>
+      </Action>
+      <Action>
+        <Date to="3307-03-27"/>
+        <Actor from="alessia_verdi"/>
+        <Verb to="attacks"/>
+        <Target to="sassia_bianchi"/>
+        <System to="anumclaw"/>
+      </Action>      
+    </Period>
+    <Period key="period_unknown" name="Uknown period">
     <Action>
       <Actor from="edmund_mahon"/>
       <Verb to="meets"/>
       <Target to="tsu_annabelle_singh"/>
-      <Status to="date_to_be_verified"/>
     </Action>
     <Action>
       <Actor from="stop_slavery_stupid"/>
       <Verb to="merges"/>
       <Target to="unchain"/>
     </Action>
-    <!-- dated actions -->
-    <!-- before 3300 -->
-    <Action>
-      <Actor from="penelope_carver"/>
-      <Date to="3111"/>
-      <Verb to="discovers"/>
-      <Target to="advanced_alien_technology"/>
-      <TargetSystem to="musca_dark_region_pj_p_b6_1_3"/>
-    </Action>
-    <Action>
-      <Actor from="azimuth_biochemicals"/>
-      <Date to="3111"/>
-      <Verb to="dispatches"/>
-      <Target to="adamastor"/>
-      <TargetSystem to="musca_dark_region_pj_p_b6"/>
-    </Action>
-    <Action>
-      <Actor from="azimuth_biochemicals"/>
-      <Date to="3113"/>
-      <Verb to="dispatches"/>
-      <Target to="hesperus"/>
-      <To to="unknown"/>
-    </Action>
-    <Action>
-      <Actor from="aaai"/>
-      <Verb to="builds"/>
-      <Target to="argents_quest"/>
-      <Status to="date_to_be_verified"/>
-      <Date to="3252"/>
-    </Action>
-    <Action>
-      <Actor from="aaai"/>
-      <Verb to="builds"/>
-      <Target to="turners_quest"/>
-      <Status to="date_to_be_verified"/>
-      <Date to="3252"/>
-    </Action>
-    <Action>
-      <Actor from="the_club"/>
-      <Date to="3270"/>
-      <Verb to="propose_void"/>
-      <Target to="london_treaty"/>
-      <System to="epsilon_erandi"/>
-      <ConfidenceLevel to="confirmed"/>
-    </Action>
-    <!-- 3300 -->
-    <!-- 3301 -->
-    <Action>
-      <Date to="3301-10-28"/>
-      <Actor from="anthony_corvus"/>
-      <Verb to="defeats"/>
-      <Target to="emperors_dawn"/>
-      <Location to="namarii"/>
-      <Location to="ltt_874"/>
-      <Location to="tabaldak"/>
-    </Action>
     <Action key="operation_davy_jones">
       <Actor from="imperial_navy"/>
       <Verb to="attacks"/>
       <Target to="kumo_crew"/>
     </Action>
-    <Action>
-      <Actor from="arissa_lavigny_duval"/>
-      <Date to="3301-10-18"/>
-      <Verb to="becomes"/>
-      <Target to="emperor"/>
-    </Action>
-    <!-- 3302 -->
-    <Action>
-      <Date to="3302-08"/>
-      <Actor from="denton_patreus"/>
-      <Verb to="abducts"/>
-      <Target to="kahina_tijani_loren"/>
-      <ConfidenceLevel to="confirmed"/>
-    </Action>
-    <Action>
-      <Date to="3302-08-23"/>
-      <Actor from="emperors_dawn"/>
-      <Verb to="attacks"/>
-      <Target to="denton_patreus"/>
-      <System to="cemiess"/>
-      <ConfidenceLevel to="confirmed"/>
-    </Action>
-    <!-- 3303 -->
-    <Action>
-      <Date to="3303-02-24"/>
-      <Actor from="alba_tesreau"/>
-      <Verb to="contacts"/>
-      <Target to="ram_tah"/>
-    </Action>
-    <Action>
-      <Date to="3303-03-24"/>
-      <Actor from="kahina_tijani_loren"/>
-      <Verb to="steals"/>
-      <Target to="meta_alloys"/>
-      <System to="maia"/>
-      <ConfidenceLevel to="confirmed"/>
-    </Action>
-    <Action>
-      <Date to="3303-04-24"/>
-      <Actor from="denton_patreus"/>
-      <Verb to="contracts"/>
-      <Target to="cmdr_besieger"/>
-      <ConfidenceLevel to="date_to_be_verified"/>
-    </Action>
-    <Action>
-      <Date to="3303-04-24"/>
-      <Actor from="denton_patreus"/>
-      <Verb to="contracts"/>
-      <Target to="elvira_martuuk"/>
-      <ConfidenceLevel to="date_to_be_verified"/>
-    </Action>
-    <Action key="cmdr_besieger_kills_kahina_tijani_loren">
-      <Date to="3303-04-29"/>
-      <Actor from="cmdr_besieger"/>
-      <Verb to="kills"/>
-      <Target to="kahina_tijani_loren"/>
-      <System to="anumclaw"/>
-    </Action>
-    <Action>
-      <Date to="3303-08-05"/>
-      <Actor from="alba_tesreau"/>
-      <Verb to="founds"/>
-      <Target to="aegis"/>
-    </Action>
-    <Action>
-      <Date to="3303-10-05"/>
-      <Actor from="alba_tesreau"/>
-      <Verb to="releases"/>
-      <Target to="remote_release_flak_launcher"/>
-    </Action>
-    <!-- 3304 -->
-    <Action>
-      <Date to="3304-08"/>
-      <Actor from="federal_intelligence_agancy"/>
-      <Verb to="arrests"/>
-      <Target to="alfred_ulyanov"/>
-    </Action>
-    <!-- 3305 -->
-    <!-- 3306 -->
-    <Action>
-      <Actor from="adamastor"/>
-      <Date to="3306-10-29"/>
-      <Verb to="reenters"/>
-      <Target to="chuckchan"/>
-    </Action>
-    <!-- 3307 -->
-    <Action>
-      <Date to="3307-12-01"/>
-      <Actor from="alessia_verdi"/>
-      <Verb to="kills"/>
-      <Target to="antonio_bianchi"/>
-      <ConfidenceLevel to="date_to_be_verified"/>
-      <System to="khun"/>
-    </Action>
-    <Action key="nine_martyrs_bombing">
-      <Date to="3307-03-11"/>
-      <Actor from="nmla"/>
-      <Verb to="bombs"/>
-      <Target to="li_qing_jao_station"/>
-    </Action>
-    <Action>
-      <Date to="3307-03-27"/>
-      <Actor from="alessia_verdi"/>
-      <Verb to="attacks"/>
-      <Target to="sassia_bianchi"/>
-      <System to="anumclaw"/>
-    </Action>
+    </Period>
   </Actions>
   <Activities>
-    <!-- Activities without date yet -->
-    <Activity>
-      <Actor from="aaai"/>
-      <Verb to="investigates"/>
-      <Target to="thargoids"/>
-    </Activity>
-    <Activity>
-      <Actor from="alba_tesreau"/>
-      <Verb to="investigates"/>
-      <Target to="thargoids"/>
-    </Activity>
-    <Activity>
-      <Actor from="aisling_duval"/>
-      <Verb to="engages"/>
-      <Target to="jordan_rochester"/>
-      <ConfidenceLevel to="date_to_be_verified"/>
-    </Activity>
-    <Activity>
-      <Actor from="arissa_lavigny_duval"/>
-      <Verb to="rules"/>
-      <Target to="empire"/>
-      <ConfidenceLevel to="date_to_be_verified"/>
-    </Activity>
-    <Activity>
-      <Actor from="arissa_lavigny_duval"/>
-      <Verb to="opposes"/>
-      <Target to="the_club"/>
-      <level to="suspected"/>
-      <ConfidenceLevel to="date_to_be_verified"/>
-    </Activity>
+    <!-- add activities to the period in which they started -->
+    <Period key="period_2100_3299" name="2100-3299">
+      <Activity>
+        <Actor from="aaai"/>
+        <Verb to="investigates"/>
+        <Target to="thargoids"/>
+      </Activity>
+      <Activity>
+        <Actor from="alba_tesreau"/>
+        <Period to="3111"/>
+        <Verb to="investigates"/>
+        <Target to="thargoids"/>
+      </Activity>
+      <Activity>
+        <Actor from="azimuth_biochemicals"/>
+        <Period to="3111"/>
+        <Verb to="contracts"/>
+        <Target to="penelope_carver"/>
+      </Activity>
+      <Activity>
+        <Actor from="penelope_carver"/>
+        <Period to="3111"/>
+        <Verb to="explores"/>
+        <Region to="coalsack_nebula"/>
+      </Activity>
+      <Activity>
+        <Actor from="mic_turner"/>
+        <System to="pleione"/>
+        <Verb to="explores"/>
+        <Target to="pleione"/>
+        <Period to="3252"/>
+      </Activity>
+      <Activity>
+        <Actor from="sirius_coorp"/>
+        <Verb to="finances"/>
+        <Target to="core_dynamics"/>
+        <Note to="note_3270_premonition_club1"/>
+      </Activity>
+      <Activity>
+        <Actor from="sirius_coorp"/>
+        <Verb to="finances"/>
+        <Target to="gutamaya"/>
+        <Note to="note_3270_premonition_club1"/>
+      </Activity>
+      <Activity>
+        <Actor from="the_club"/>
+        <Verb to="controls"/>
+        <Target to="aisling_duval"/>
+        <Note to="note_3270_premonition_club1"/>
+      </Activity>
+      <Activity>
+        <Actor from="the_club"/>
+        <Verb to="controls"/>
+        <Target to="denton_patreus"/>
+        <Note to="note_3270_premonition_club1"/>
+      </Activity>
+      <Activity>
+        <Actor from="the_club"/>
+        <Verb to="controls"/>
+        <Target to="emperors_dawn"/>
+        <Note to="note_3270_premonition_club1"/>
+      </Activity>      
+    </Period>
+    <Period key="period_3300" name="3301">
+      <Activity>
+        <Actor from="prism_reclamists"/>
+        <Verb to="rebellion"/>
+        <Target to="loren_family"/>
+        <System to="prism"/>
+      </Activity>
+    </Period>
+    <Period key="period_3301" name="3301">
+      <Activity key="pegasi_pirate_war">
+        <Participant to="kumo_crew"/>
+      </Activity>
+    </Period>
+    <Period key="period_3302" name="3302">
+    </Period>
+    <Period key="period_3303" name="3303">
+      <Activity key="second_thargoid_war">
+        <Participant to="thargoids"/>
+        <Participant to="humans"/>
+      </Activity>
+    </Period>
+    <Period key="period_3304" name="3304">
+      <Activity>
+        <Actor from="thargoids"/>
+        <Verb to="attacks"/>
+        <Target to="aegis_laboratories"/>
+      </Activity>
+    </Period>
+    <Period key="period_3305" name="3305">
+    </Period>
+    <Period key="period_3306" name="3306">
+    </Period>
+    <Period key="period_3307" name="3307">
+      <Activity key="galaxy_summit_3307">
+        <Date to="3307"/>
+        <Participant to="anders_blaine"/>
+        <Participant to="archon_delaine"/>
+      </Activity>
+      <Activity>
+        <FromDate to="3307-03-10"/>
+        <Actor from="alliance_salvage_guild"/>
+        <Verb to="investigates"/>
+        <Target to="adamastor"/>
+      </Activity>
+    </Period>
+    <Period key="period_unknown" name="Uknown period">
+      <Activity>
+        <Actor from="aisling_duval"/>
+        <Verb to="engages"/>
+        <Target to="jordan_rochester"/>
+      </Activity>
+      <Activity>
+        <Actor from="arissa_lavigny_duval"/>
+        <Verb to="rules"/>
+        <Target to="empire"/>
+      </Activity>
+      <Activity>
+        <Actor from="arissa_lavigny_duval"/>
+        <Verb to="opposes"/>
+        <Target to="the_club"/>
+        <level to="suspected"/>
+      </Activity>
     <Activity>
       <Actor from="denton_patreus"/>
       <Verb to="leads"/>
       <Target to="imperial_navy"/>
-      <ConfidenceLevel to="date_to_be_verified"/>
     </Activity>
     <Activity>
       <Actor from="inra"/>
       <Verb to="develops"/>
       <Target to="bio_weapons"/>
-      <ConfidenceLevel to="date_to_be_verified"/>
     </Activity>
     <Activity>
       <Actor from="inra"/>
       <Verb to="attacks"/>
       <Item to="bio_weapons"/>
       <Target to="thargoids"/>
-      <ConfidenceLevel to="date_to_be_verified"/>
     </Activity>
-    <Activity>
-      <Actor from="sirius_coorp"/>
-      <Verb to="finances"/>
-      <Target to="eotienses_silver_universal_plc"/>
-      <Note to="note_3307_03_21_alessia_nurei_sassia"/>
-      <Level to="suspected"/>
-    </Activity>
-    <!-- Dated activities before 3300 -->
-    <Activity>
-      <Actor from="azimuth_biochemicals"/>
-      <Date to="3111"/>
-      <Verb to="contracts"/>
-      <Target to="penelope_carver"/>
-    </Activity>
-    <Activity>
-      <Actor from="penelope_carver"/>
-      <Date to="3111"/>
-      <Verb to="explores"/>
-      <Region to="coalsack_nebula"/>
-    </Activity>
-    <Activity>
-      <Actor from="mic_turner"/>
-      <System to="pleione"/>
-      <Verb to="explores"/>
-      <Target to="pleione"/>
-      <Date to="3252"/>
-    </Activity>
-    <Activity>
-      <Actor from="sirius_coorp"/>
-      <Verb to="finances"/>
-      <Target to="core_dynamics"/>
-      <Note to="note_3270_premonition_club1"/>
-    </Activity>
-    <Activity>
-      <Actor from="sirius_coorp"/>
-      <Verb to="finances"/>
-      <Target to="gutamaya"/>
-      <Note to="note_3270_premonition_club1"/>
-    </Activity>
-    <Activity>
-      <Actor from="the_club"/>
-      <Verb to="controls"/>
-      <Target to="aisling_duval"/>
-      <Note to="note_3270_premonition_club1"/>
-    </Activity>
-    <Activity>
-      <Actor from="the_club"/>
-      <Verb to="controls"/>
-      <Target to="denton_patreus"/>
-      <Note to="note_3270_premonition_club1"/>
-    </Activity>
-    <Activity>
-      <Actor from="the_club"/>
-      <Verb to="controls"/>
-      <Target to="emperors_dawn"/>
-      <Note to="note_3270_premonition_club1"/>
-    </Activity>
-    <!-- 3300 -->
-    <Activity>
-      <Date to="3300"/>
-      <Actor from="prism_reclamists"/>
-      <Verb to="rebellion"/>
-      <Target to="loren_family"/>
-      <System to="prism"/>
-    </Activity>
-    <!-- 3301 -->
-    <Activity key="pegasi_pirate_war">
-      <Participant to="kumo_crew"/>
-    </Activity>
-    <!-- 3303 -->
-    <Activity key="second_thargoid_war">
-      <Participant to="thargoids"/>
-      <Participant to="humans"/>
-    </Activity>
-    <!-- 3304 -->
-    <Activity>
-      <Actor from="thargoids"/>
-      <Verb to="attacks"/>
-      <Target to="aegis_laboratories"/>
-      <Date to="3304"/>
-    </Activity>
-    <!-- 3306 -->
-    <!-- 3307 -->
-    <Activity key="galaxy_summit_3307">
-      <Date to="3307"/>
-      <Participant to="anders_blaine"/>
-      <Participant to="archon_delaine"/>
-    </Activity>
-    <Activity>
-      <StartDate to="3307-03-10"/>
-      <Actor from="alliance_salvage_guild"/>
-      <Verb to="investigates"/>
-      <Target to="adamastor"/>
-    </Activity>
+      <Activity>
+        <Actor from="sirius_coorp"/>
+        <Verb to="finances"/>
+        <Target to="eotienses_silver_universal_plc"/>
+        <Note to="note_3307_03_21_alessia_nurei_sassia"/>
+        <Level to="suspected"/>
+      </Activity>
+    </Period>
   </Activities>
   <Corporations>
     <Coorperation key="aaai">
@@ -3333,76 +3354,76 @@
   </Corporations>
   <Memberships>
     <Membership>
-      <Member to="aden_tanner"/>
+      <Member from="aden_tanner"/>
       <Organization to="aegis"/>
       <Role to="liaison"/>
     </Membership>
     <Membership>
-      <Member to="aden_tanner"/>
+      <Member from="aden_tanner"/>
       <Organization to="federal_navy"/>
       <Role to="liaison"/>
     </Membership>
     <Membership>
-      <Member to="aisling_duval"/>
+      <Member from="aisling_duval"/>
       <Organization to="stop_slavery_stupid"/>
       <Role to="founder"/>
     </Membership>
     <Membership>
-      <Member to="aisling_duval"/>
+      <Member from="aisling_duval"/>
       <Organization to="unchain"/>
     </Membership>
     <Membership>
-      <Member to="alba_tesreau"/>
+      <Member from="alba_tesreau"/>
       <Organization to="achenar_research_council"/>
       <Role to="affiliate_professor"/>
     </Membership>
     <Membership>
-      <Member to="alba_tesreau"/>
+      <Member from="alba_tesreau"/>
       <Organization to="aegis"/>
       <Role to="head_of_research"/>
     </Membership>
     <Membership>
-      <Member to="anders_blaine"/>
+      <Member from="anders_blaine"/>
       <Organization to="emperors_dawn"/>
     </Membership>
     <Membership>
-      <Member to="anthony_corvus"/>
+      <Member from="anthony_corvus"/>
       <Organization to="imperial_army"/>
       <Role to="general"/>
     </Membership>
     <!-- before 3300 -->
     <Membership>
-      <Member to="antonia_madison"/>
-      <StartDate to="3264"/>
-      <EndDate to="3272"/>
+      <Member from="antonia_madison"/>
+      <FromDate to="3264"/>
+      <ToDate to="3272"/>
       <Role to="president"/>
     </Membership>
     <!-- 3303 -->
     <Membership>
       <Date to="3303-08"/>
-      <Member to="alba_tesreau"/>
+      <Member from="alba_tesreau"/>
       <Organization to="aegis"/>
       <Role to="founder"/>
       <Role to="scientific_advisor"/>
     </Membership>
     <Membership>
-      <Member to="antonio_bianchi"/>
+      <Member from="antonio_bianchi"/>
       <Organization to="federation"/>
       <Role to="agent"/>
     </Membership>
     <Membership>
-      <Member to="antonio_bianchi"/>
+      <Member from="antonio_bianchi"/>
       <Organization to="empire"/>
       <Role to="agent"/>
     </Membership>
     <Membership>
-      <Member to="antonio_bianchi"/>
+      <Member from="antonio_bianchi"/>
       <Organization to="the_club"/>
       <ConfidenceLevel to="suspected"/>
       <Role to="agent"/>
     </Membership>
     <Membership>
-      <Member to="arissa_lavigny_duval"/>
+      <Member from="arissa_lavigny_duval"/>
       <Organization to="empire"/>
       <Role to="emperor"/>
     </Membership>
@@ -3411,103 +3432,99 @@
       <Organization to="empire"/>
     </Membership>
     <Membership>
-      <Member to="club_exo"/>
+      <Member from="club_exo"/>
       <Organization to="the_club"/>
       <Role to="board_member"/>
     </Membership>
     <Membership>
-      <Member to="club_finance"/>
+      <Member from="club_finance"/>
       <Organization to="the_club"/>
       <Role to="board_member"/>
     </Membership>
     <Membership>
-      <Member to="club_infrastructure"/>
+      <Member from="club_infrastructure"/>
       <Organization to="the_club"/>
       <Role to="board_member"/>
     </Membership>
     <Membership>
-      <Member to="club_personnel"/>
+      <Member from="club_personnel"/>
       <Organization to="the_club"/>
       <Role to="board_member"/>
     </Membership>
     <Membership>
-      <Member to="club_society"/>
+      <Member from="club_society"/>
       <Organization to="the_club"/>
       <Role to="board_member"/>
     </Membership>
     <Membership>
-      <Member to="denton_patreus"/>
+      <Member from="denton_patreus"/>
       <Organization to="empire"/>
     </Membership>
     <Membership>
-      <Member to="denton_patreus"/>
+      <Member from="denton_patreus"/>
       <Organization to="imperial_navy"/>
-      <StartDate to="3302-02-22"/>
+      <FromDate to="3302-02-22"/>
       <Role to="admiral"/>
       <Role to="leader"/>
     </Membership>
     <Membership>
-      <Member to="denton_patreus"/>
+      <Member from="denton_patreus"/>
       <Organization to="the_club"/>
       <ConfidenceLevel to="suspected"/>
       <Role to="agent"/>
     </Membership>
     <Membership>
-      <Member to="kahina_tijani_loren"/>
+      <Member from="kahina_tijani_loren"/>
       <Organization to="empire"/>
       <Role to="citizen"/>
-      <StartDate to="3275"/>
-      <EndDate to="3300"/>
+      <FromDate to="3275"/>
+      <ToDate to="3300"/>
     </Membership>
     <Membership>
-      <Member to="kahina_tijani_loren"/>
+      <Member from="kahina_tijani_loren"/>
       <Organization to="empire"/>
       <Role to="senator"/>
-      <StartDate to="3300"/>
-      <EndDate to="3300"/>
+      <FromDate to="3300"/>
+      <ToDate to="3300"/>
     </Membership>
     <Membership>
-      <Member to="kahina_tijani_loren"/>
+      <Member from="kahina_tijani_loren"/>
       <Organization to="the_dark_wheel"/>
       <Role to="agent"/>
-      <StartDate to="3303"/>
-      <ConfidenceLevel to="date_to_be_verified"/>
+      <FromDate to="3303"/>
     </Membership>
     <Membership>
-      <Member to="kahina_tijani_loren"/>
+      <Member from="kahina_tijani_loren"/>
       <Organization to="children_of_raxxla"/>
       <Role to="leader"/>
-      <StartDate to="3302"/>
-      <EndDate to="3303-04-29"/>
-      <ConfidenceLevel to="date_to_be_verified"/>
+      <FromDate to="3302"/>
+      <ToDate to="3303-04-29"/>
     </Membership>
     <Membership>
-      <Member to="mic_turner"/>
+      <Member from="mic_turner"/>
       <Organization to="aaai"/>
       <Role to="founder"/>
-      <StartDate to="3237"/>
+      <FromDate to="3237"/>
     </Membership>
     <Membership>
-      <Member to="meredith_argent"/>
+      <Member from="meredith_argent"/>
       <Organization to="aaai"/>
       <Role to="founder"/>
-      <StartDate to="3237"/>
+      <FromDate to="3237"/>
     </Membership>
     <Membership>
-      <Member to="rebecca_weston"/>
+      <Member from="rebecca_weston"/>
       <Organization to="the_club"/>
-      <EndDate to="3250"/>
-      <ConfidenceLevel to="date_to_be_verified"/>
+      <ToDate to="3250"/>
     </Membership>
     <Membership>
-      <Member to="rebecca_weston"/>
+      <Member from="rebecca_weston"/>
       <Organization to="the_dark_wheel"/>
       <Role to="agent"/>
-      <StartDate to="3250"/>
-      <ConfidenceLevel to="date_to_be_verified"/>
+      <FromDate to="3250"/>
     </Membership>
     <Membership>
-      <Member to="tsu_annabelle_singh"/>
+      <Member from="tsu_annabelle_singh"/>
       <Organization to="alliance_interpol"/>
     </Membership>
   </Memberships>
@@ -9483,7 +9500,7 @@
     <Person key="tod_mcquinn">
       <Details>
         <!--<Allegiance to=""/>-->
-        <!--<Alias to=""/>-->
+        <Alias to="the_blaster"/>
         <!--<Ancestor to=""/>-->
         <!--<Attribute to=""/>-->
         <!--<CharacterType to=""/>-->
