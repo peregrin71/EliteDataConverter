@@ -22,16 +22,6 @@ namespace EliteGraph
             sID = 0;
         }
 
-        public Node(string kind)
-        {
-            Data = new Dictionary<string, string>();
-            ID = ++sID;
-            Key = kind + "_" + ID.ToString();
-            Kind = kind;
-            IsUsed = false;
-            IsKeyword = false;
-        }
-
         public Node(string key, string kind, string name)
         {
             Data = new Dictionary<string, string>();

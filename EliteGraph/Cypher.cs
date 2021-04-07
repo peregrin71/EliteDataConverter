@@ -57,6 +57,10 @@ namespace EliteGraph
 
                         stream.WriteLine(")");
                     }
+                    else
+                    {
+                        System.Diagnostics.Trace.WriteLine(String.Format("Node '{0}' is not used yet", node.Key));
+                    }
                 }
 
                 foreach (var edge in g.Edges)
